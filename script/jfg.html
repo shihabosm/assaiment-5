@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>onchange Event Demo</title>
+</head>
+<body>
+
+<h2>Choose your favorite programming language:</h2>
+
+<select id="languageSelect" onchange="displayMessage()">
+  <option value="javascript">JavaScript</option>
+  <option value="python">Python</option>
+  <option value="java">Java</option>
+  <option value="ruby">Ruby</option>
+</select>
+
+<p id="message"></p>
+
+<script>
+  // Function to display a message based on the selected language
+  function displayMessage() {
+    var selectElement = document.getElementById("languageSelect");
+    var selectedLanguage = selectElement.value;
+
+    var messageElement = document.getElementById("message");
+    messageElement.textContent = "Your favorite language is: " + selectedLanguage;
+  }
+</script>
+
+</body>
+</html>
