@@ -10,7 +10,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
-    <header class="px-20 pt-10">
+    <header class="px-2 md:px-20 pt-10">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -49,7 +49,7 @@
 
     <main>
         <!-- background section -->
-        <section class="px-20 pt-10">
+        <section class=" px-2 md:px-20 pt-10">
             <div class="hero h-[400px] md:h-[800px] object-cover" style="background-image: url(images/banner.png);">
                 <div class=""></div>
                 <div class="hero-content text-center text-neutral-content">
@@ -67,7 +67,7 @@
             <h1 class="text-2xl font-semibold text-black text-center ">Best offers for you</h1>
 
             <div class="w-3/4 mx-auto mt-14">
-                <div class="flex gap-6">
+                <div class="flex flex-col md:flex-row gap-6">
                     <img src="images/genaral2.png" alt="">
                     <img src="images/genaral.png" alt="">
                 </div>
@@ -79,16 +79,16 @@
 
         </section>
         <!-- ticket section  -->
-        <section id="paribahan" class="px-44 ">
+        <section id="paribahan" class=" px-6 md:px-44 ">
             <h1 class="text-3xl font-semibold text-black text-center">P.H Paribahan</h1>
             <p class="text-xl text-center mt-8">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
 
             
                 
-                  <div class="flex bg-[#FFFFFF] gap-20 mt-20">
+                  <div class="flex flex-col md:flex-row bg-[#FFFFFF] gap-2 md:gap-20 mt-2 md:mt-20">
                     <div class="">
                         <div class="flex gap-4">
-                            <div><img src="images/bus-logo.png" alt=""></div>
+                            <div><img class="" src="images/bus-logo.png" alt=""></div>
                             <h1 class="text-3xl font-semibold text-black " >Greenline Paribahan
                                 <p class="text-sm">Coach-009-WEB ! AC_Business</p>
                             </h1>
@@ -107,7 +107,7 @@
                             <h3>9:00 PM</h3>
                          </div>
                          <hr class="h-px my-4 bg-gray-200 border-dashed dark:bg-gray-700">
-                         <div class="flex gap-5">
+                         <div class="flex flex-wrap gap-5">
                             <button class="btn" >Boarding Point - Laxmipu</button>
                             <button class="btn">Dropping Point - Bogura</button>
                             <button class="btn">Est. Time - 11 Hour</button>
@@ -117,10 +117,10 @@
                     
 
                     <div>
-                        <img src="images/info-devider.png" class="w-full" alt="">
+                        <img  src="images/info-devider.png" class="w-full hidden md:block" alt="">
                     </div>
-                      <div class="mt-28">
-                        <img src="images/fare.png" alt="">
+                      <div class=" mt-4 md:mt-28 flex flex-col items-center">
+                        <img src="images/fare.png" alt="" class="w-10 md:w-full">
                         <h1 class="text-3xl font-semibold text-black "><span>550</span>Taka</h1>
                         <p class="text-xl">per Seat</p>
                     </div>
@@ -128,7 +128,7 @@
 
         </section>
                      <!-- form section  -->
-              <section class="p-44 bg-gray-100 flex justify-evenly">
+              <section class="p-4 md:p-44 bg-gray-100 flex flex-col md:flex-row justify-evenly">
 
                 <div class="bg-gray-50 p-6">
                   <h2 class="text-2xl font-semibold">Select Your Seat</h2>
